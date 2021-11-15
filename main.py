@@ -13,10 +13,9 @@ images_count = 0
 images_processed = 0
 
 def ShowStatus():
-    while True:
+    while images_processed < images_count:
         print(f'{images_processed}/{images_count}', end="")
         print("\r", end="") 
-        time.sleep(100)
 
 
 th = threading.Thread(target=ShowStatus)
@@ -34,8 +33,8 @@ for img in os.listdir(path):
     max_higness = np.max(image)
     mean_higness = np.mean(image)
 
-    if mean_higness < .15 * 255:
-        continue
+    # if mean_higness < .15 * 255:
+        # continue
     
     
     

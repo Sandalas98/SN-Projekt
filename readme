@@ -1,0 +1,23 @@
+Katalog musi się składać z następującej struktury:
+
+-+---main.py
+ |
+ +---boneage-test-dataset.csv
+ |
+ +---boneage-training-dataset.csv
+ |
+ +---/data
+     |
+     +---/test_fol
+     |   |
+     |   +--- tu kilka zdjęć do testów
+     |
+     |
+     +---/boneage-test-dataset
+     |   |
+     |   +--- zdjęcia
+     |
+     |
+     +---/boneage-training-dataset
+         |
+         +--- zdjęcia
