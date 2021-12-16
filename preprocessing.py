@@ -4,11 +4,9 @@ import os
 import threading
 import time
 
-def preprocessing_x_ray():
+def preprocessing_x_ray(path = './data/test_fol'):
     train_labels = np.genfromtxt('./data/boneage-training-dataset.csv', delimiter=',')
     test_labels = np.genfromtxt('./data/boneage-test-dataset.csv', delimiter=',')
-
-    path = './data/test_fol'
 
     images_amount = 0
     images_count = 0
@@ -50,8 +48,6 @@ def preprocessing_x_ray():
         max_higness = np.max(image)
         mean_higness = np.mean(image)
 
-
-
         if mean_higness > 100:
             continue
 
@@ -92,7 +88,7 @@ def preprocessing_x_ray():
 
         image = Image.fromarray(image)
         
-        image.save(path+'/post_'+img)
+        image.save(path+'/post/'+img)
 
         images_count += 1
 
