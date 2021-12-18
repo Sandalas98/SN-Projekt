@@ -9,8 +9,10 @@ import os
 train = pd.read_csv('./data/boneage-training-dataset.csv')
 test = pd.read_csv('./data/boneage-test-dataset.csv', sep=';')
 
+print(test)
+
 train_path = './data/boneage-training-dataset/boneage-training-dataset/post'
-train_size = 2000
+train_size = 1000
 X_train = []
 y_train = []
 
@@ -19,7 +21,8 @@ for img in os.listdir(train_path):
     if len(X_train) == train_size:
         break
     image = Image.open(train_path+"/"+img)
-    image = ImageOps.grayscale(image)
+    # To już jest w preprocessingu:
+    #image = ImageOps.grayscale(image)
     image = np.array(image)
     image = image.reshape((512, 512, 1))
     X_train.append(image / 255)
@@ -36,10 +39,11 @@ y_test = []
 
 for img in os.listdir(test_path):
     image = Image.open(test_path+"/"+img)
-    image = ImageOps.grayscale(image)
-    image = image.resize((512,512))
+    #image = ImageOps.grayscale(image)
+    #image = image.resize((512,512))
     image = np.array(image)
     image = image.reshape((512, 512, 1))
+    
     X_test.append(image / 255)
     y_test.append(test.loc[lambda df: df['id'] == int(img.split('.')[0])].boneage.values[0])
 

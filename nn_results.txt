@@ -1,0 +1,384 @@
+model = models.Sequential()
+model.add(layers.Conv2D(1, (3, 3), activation='relu', input_shape=(512, 512, 1)))
+model.add(layers.MaxPooling2D((3,3)))
+
+Epoch 1/100
+209/209 [==============================] - 152s 722ms/step - loss: 41.4547 - mean_absolute_error: 41.4547 - val_loss: 45.9740 - val_mean_absolute_error: 45.9740
+Epoch 2/100
+209/209 [==============================] - 137s 653ms/step - loss: 34.4586 - mean_absolute_error: 34.4586 - val_loss: 37.9590 - val_mean_absolute_error: 37.9590
+Epoch 3/100
+209/209 [==============================] - 138s 662ms/step - loss: 32.3352 - mean_absolute_error: 32.3352 - val_loss: 34.0125 - val_mean_absolute_error: 34.0125
+Epoch 4/100
+209/209 [==============================] - 137s 656ms/step - loss: 31.0317 - mean_absolute_error: 31.0317 - val_loss: 34.2754 - val_mean_absolute_error: 34.2754
+Epoch 5/100
+209/209 [==============================] - 135s 645ms/step - loss: 30.7695 - mean_absolute_error: 30.7695 - val_loss: 33.1608 - val_mean_absolute_error: 33.1608
+Epoch 6/100
+209/209 [==============================] - 135s 646ms/step - loss: 30.7950 - mean_absolute_error: 30.7950 - val_loss: 36.0927 - val_mean_absolute_error: 36.0927
+Epoch 7/100
+209/209 [==============================] - 137s 655ms/step - loss: 30.3615 - mean_absolute_error: 30.3615 - val_loss: 36.2718 - val_mean_absolute_error: 36.2718
+Epoch 8/100
+209/209 [==============================] - 134s 643ms/step - loss: 29.8228 - mean_absolute_error: 29.8228 - val_loss: 34.1638 - val_mean_absolute_error: 34.1638
+Epoch 9/100
+209/209 [==============================] - 143s 683ms/step - loss: 29.9286 - mean_absolute_error: 29.9286 - val_loss: 38.1609 - val_mean_absolute_error: 38.1609
+Epoch 10/100
+209/209 [==============================] - 135s 648ms/step - loss: 29.7357 - mean_absolute_error: 29.7357 - val_loss: 38.7464 - val_mean_absolute_error: 38.7464
+Epoch 11/100
+209/209 [==============================] - 135s 646ms/step - loss: 29.2357 - mean_absolute_error: 29.2357 - val_loss: 36.0846 - val_mean_absolute_error: 36.0846
+Epoch 12/100
+155/209 [=====================>........] - ETA: 35s - loss: 28.9428 - mean_absolute_error: 28.9428
+
+model = models.Sequential()
+model.add(layers.Conv2D(1, (3, 3), activation='relu', input_shape=(512, 512, 1)))
+model.add(layers.MaxPooling2D((3,3)))
+model.add(layers.Conv2D(1, (3, 3), activation='relu'))
+model.add(layers.MaxPooling2D((3, 3)))
+
+Epoch 1/100
+209/209 [==============================] - 165s 784ms/step - loss: 49.2518 - mean_absolute_error: 49.2518 - val_loss: 34.6731 - val_mean_absolute_error: 34.6731
+Epoch 2/100
+209/209 [==============================] - 154s 738ms/step - loss: 31.6138 - mean_absolute_error: 31.6138 - val_loss: 35.8632 - val_mean_absolute_error: 35.8632
+Epoch 3/100
+209/209 [==============================] - 152s 730ms/step - loss: 31.3532 - mean_absolute_error: 31.3532 - val_loss: 34.4158 - val_mean_absolute_error: 34.4158
+Epoch 4/100
+209/209 [==============================] - 152s 728ms/step - loss: 31.3042 - mean_absolute_error: 31.3042 - val_loss: 38.5252 - val_mean_absolute_error: 38.5252
+Epoch 5/100
+209/209 [==============================] - 152s 728ms/step - loss: 31.1689 - mean_absolute_error: 31.1689 - val_loss: 34.7262 - val_mean_absolute_error: 34.7262
+Epoch 6/100
+209/209 [==============================] - 152s 728ms/step - loss: 31.0702 - mean_absolute_error: 31.0702 - val_loss: 35.7715 - val_mean_absolute_error: 35.7715
+Epoch 7/100
+ 14/209 [=>............................] - ETA: 2:22 - loss: 30.1968 - mean_absolute_error: 30.1968
+
+model = models.Sequential()
+model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(512, 512, 1)))
+model.add(layers.MaxPooling2D((3,3)))
+
+Epoch 1/100
+209/209 [==============================] - 429s 2s/step - loss: 37.1648 - mean_absolute_error: 37.1648 - val_loss: 32.9160 - val_mean_absolute_error: 32.9160
+Epoch 2/100
+209/209 [==============================] - 401s 2s/step - loss: 29.1086 - mean_absolute_error: 29.1086 - val_loss: 33.8058 - val_mean_absolute_error: 33.8058
+Epoch 3/100
+209/209 [==============================] - 409s 2s/step - loss: 27.0471 - mean_absolute_error: 27.0471 - val_loss: 35.8615 - val_mean_absolute_error: 35.8615
+Epoch 4/100
+209/209 [==============================] - 407s 2s/step - loss: 24.6640 - mean_absolute_error: 24.6640 - val_loss: 31.4848 - val_mean_absolute_error: 31.4848
+Epoch 5/100
+209/209 [==============================] - 397s 2s/step - loss: 22.9198 - mean_absolute_error: 22.9198 - val_loss: 33.5561 - val_mean_absolute_error: 33.5561
+Epoch 6/100
+209/209 [==============================] - 396s 2s/step - loss: 20.8320 - mean_absolute_error: 20.8320 - val_loss: 30.8113 - val_mean_absolute_error: 30.8113
+Epoch 7/100
+209/209 [==============================] - 396s 2s/step - loss: 19.2750 - mean_absolute_error: 19.2750 - val_loss: 31.8426 - val_mean_absolute_error: 31.8426
+Epoch 8/100
+209/209 [==============================] - 394s 2s/step - loss: 17.4980 - mean_absolute_error: 17.4980 - val_loss: 31.2534 - val_mean_absolute_error: 31.2534
+Epoch 9/100
+209/209 [==============================] - 422s 2s/step - loss: 16.5593 - mean_absolute_error: 16.5593 - val_loss: 32.7296 - val_mean_absolute_error: 32.7296
+Epoch 10/100
+ 12/209 [>.............................] - ETA: 7:05 - loss: 15.5991 - mean_absolute_error: 15.5991
+
+model = models.Sequential()
+model.add(layers.Conv2D(4, (3, 3), activation='relu', input_shape=(512, 512, 1)))
+model.add(layers.MaxPooling2D((3,3)))
+model.add(layers.Flatten())
+model.add(layers.Dense(256, activation='relu'))
+model.add(layers.Dense(100, activation='relu'))
+model.add(layers.Dense(1))
+
+Epoch 1/100
+209/209 [==============================] - 217s 1s/step - loss: 39.2790 - mean_absolute_error: 39.2790 - val_loss: 41.3682 - val_mean_absolute_error: 41.3682
+Epoch 2/100
+209/209 [==============================] - 188s 898ms/step - loss: 32.9083 - mean_absolute_error: 32.9083 - val_loss: 34.8653 - val_mean_absolute_error: 34.8653
+Epoch 3/100
+209/209 [==============================] - 186s 891ms/step - loss: 29.6870 - mean_absolute_error: 29.6870 - val_loss: 32.9881 - val_mean_absolute_error: 32.9881
+Epoch 4/100
+209/209 [==============================] - 182s 873ms/step - loss: 29.0986 - mean_absolute_error: 29.0986 - val_loss: 32.0723 - val_mean_absolute_error: 32.0723
+Epoch 5/100
+209/209 [==============================] - 189s 902ms/step - loss: 27.9746 - mean_absolute_error: 27.9746 - val_loss: 32.8242 - val_mean_absolute_error: 32.8242
+Epoch 6/100
+209/209 [==============================] - 185s 885ms/step - loss: 26.9576 - mean_absolute_error: 26.9576 - val_loss: 32.8642 - val_mean_absolute_error: 32.8642
+Epoch 7/100
+179/209 [========================>.....] - ETA: 26s - loss: 26.9829 - mean_absolute_error: 26.9829
+
+model = models.Sequential()
+model.add(layers.Conv2D(16, (3, 3), activation='relu', input_shape=(512, 512, 1)))
+model.add(layers.MaxPooling2D((3,3)))
+model.add(layers.Flatten())
+model.add(layers.Dense(256, activation='relu'))
+model.add(layers.Dense(100, activation='relu'))
+model.add(layers.Dense(1))
+
+Epoch 1/100
+209/209 [==============================] - 319s 1s/step - loss: 37.6753 - mean_absolute_error: 37.6753 - val_loss: 33.8160 - val_mean_absolute_error: 33.8160
+Epoch 2/100
+209/209 [==============================] - 279s 1s/step - loss: 29.3211 - mean_absolute_error: 29.3211 - val_loss: 32.7812 - val_mean_absolute_error: 32.7812
+Epoch 3/100
+ 48/209 [=====>........................] - ETA: 3:32 - loss: 28.5324 - mean_absolute_error: 28.5324
+
+model = models.Sequential()
+model.add(layers.Conv2D(16, (3, 3), activation='relu', input_shape=(512, 512, 1)))
+model.add(layers.AveragePooling2D((3,3)))
+model.add(layers.Flatten())
+model.add(layers.Dense(256, activation='relu'))
+model.add(layers.Dense(100, activation='relu'))
+model.add(layers.Dense(1))
+
+Epoch 1/100
+209/209 [==============================] - 284s 1s/step - loss: 36.3889 - mean_absolute_error: 36.3889 - val_loss: 30.9755 - val_mean_absolute_error: 30.9755
+Epoch 2/100
+209/209 [==============================] - 272s 1s/step - loss: 30.4540 - mean_absolute_error: 30.4540 - val_loss: 32.9630 - val_mean_absolute_error: 32.9630
+Epoch 3/100
+209/209 [==============================] - 256s 1s/step - loss: 29.7776 - mean_absolute_error: 29.7776 - val_loss: 33.8393 - val_mean_absolute_error: 33.8393
+Epoch 4/100
+209/209 [==============================] - 289s 1s/step - loss: 28.2129 - mean_absolute_error: 28.2129 - val_loss: 36.9211 - val_mean_absolute_error: 36.9211
+Epoch 5/100
+209/209 [==============================] - 401s 2s/step - loss: 27.6788 - mean_absolute_error: 27.6788 - val_loss: 32.5087 - val_mean_absolute_error: 32.5087
+Epoch 6/100
+ 56/209 [=======>......................] - ETA: 4:51 - loss: 26.7918 - mean_absolute_error: 26.7918
+
+model = models.Sequential()
+model.add(layers.Conv2D(32, (2, 2), activation='relu', input_shape=(512, 512, 1)))
+model.add(layers.AveragePooling2D((2,2)))
+model.add(layers.Conv2D(32, (2,2), activation='relu'))
+model.add(layers.AveragePooling2D((2,2)))
+model.add(layers.Conv2D(32, (2,2), activation='relu'))
+model.add(layers.AveragePooling2D((2,2)))
+model.add(layers.Flatten())
+model.add(layers.Dense(256, activation='relu'))
+model.add(layers.Dense(100, activation='relu'))
+model.add(layers.Dense(1))
+
+Epoch 1/100
+209/209 [==============================] - 485s 2s/step - loss: 36.6458 - mean_absolute_error: 36.6458 - val_loss: 37.0045 - val_mean_absolute_error: 37.0045
+Epoch 2/100
+209/209 [==============================] - 460s 2s/step - loss: 31.1341 - mean_absolute_error: 31.1341 - val_loss: 37.5754 - val_mean_absolute_error: 37.5754
+Epoch 3/100
+209/209 [==============================] - 470s 2s/step - loss: 29.7669 - mean_absolute_error: 29.7669 - val_loss: 33.2029 - val_mean_absolute_error: 33.2029
+Epoch 4/100
+209/209 [==============================] - 457s 2s/step - loss: 28.8198 - mean_absolute_error: 28.8198 - val_loss: 32.0009 - val_mean_absolute_error: 32.0009
+Epoch 5/100
+  2/209 [..............................] - ETA: 7:50 - loss: 27.5495 - mean_absolute_error: 27.5495
+
+model = models.Sequential()
+model.add(layers.InputLayer((512, 512, 1)))
+model.add(layers.Flatten())
+model.add(layers.Dense(256, activation='relu'))
+model.add(layers.Dense(100, activation='relu'))
+model.add(layers.Dense(1))
+
+Epoch 1/100
+209/209 [==============================] - 58s 261ms/step - loss: 41.2265 - mean_absolute_error: 41.2265 - val_loss: 50.7483 - val_mean_absolute_error: 50.7483
+Epoch 2/100
+209/209 [==============================] - 43s 207ms/step - loss: 37.2868 - mean_absolute_error: 37.2868 - val_loss: 47.9191 - val_mean_absolute_error: 47.9191
+Epoch 3/100
+209/209 [==============================] - 43s 206ms/step - loss: 35.3514 - mean_absolute_error: 35.3514 - val_loss: 49.3112 - val_mean_absolute_error: 49.3112
+Epoch 4/100
+209/209 [==============================] - 43s 205ms/step - loss: 33.9415 - mean_absolute_error: 33.9415 - val_loss: 46.5285 - val_mean_absolute_error: 46.5285
+Epoch 5/100
+209/209 [==============================] - 43s 205ms/step - loss: 33.6005 - mean_absolute_error: 33.6005 - val_loss: 46.2792 - val_mean_absolute_error: 46.2792
+Epoch 6/100
+209/209 [==============================] - 43s 205ms/step - loss: 32.0193 - mean_absolute_error: 32.0193 - val_loss: 44.5445 - val_mean_absolute_error: 44.5445
+Epoch 7/100
+209/209 [==============================] - 43s 205ms/step - loss: 31.7795 - mean_absolute_error: 31.7795 - val_loss: 44.2063 - val_mean_absolute_error: 44.2063
+Epoch 8/100
+209/209 [==============================] - 43s 207ms/step - loss: 31.3812 - mean_absolute_error: 31.3812 - val_loss: 43.8886 - val_mean_absolute_error: 43.8886
+Epoch 9/100
+209/209 [==============================] - 44s 209ms/step - loss: 31.3706 - mean_absolute_error: 31.3706 - val_loss: 44.1305 - val_mean_absolute_error: 44.1305
+Epoch 10/100
+209/209 [==============================] - 43s 207ms/step - loss: 31.4758 - mean_absolute_error: 31.4758 - val_loss: 41.8092 - val_mean_absolute_error: 41.8092
+Epoch 11/100
+209/209 [==============================] - 43s 205ms/step - loss: 30.4374 - mean_absolute_error: 30.4374 - val_loss: 42.0651 - val_mean_absolute_error: 42.0651
+Epoch 12/100
+209/209 [==============================] - 43s 205ms/step - loss: 30.3110 - mean_absolute_error: 30.3110 - val_loss: 42.4209 - val_mean_absolute_error: 42.4209
+Epoch 13/100
+153/209 [====================>.........] - ETA: 11s - loss: 29.4782 - mean_absolute_error: 29.4782
+
+model = models.Sequential()
+model.add(layers.InputLayer((512, 512, 1)))
+model.add(layers.Flatten())
+model.add(layers.Dense(512, activation='relu'))
+model.add(layers.Dense(256, activation='relu'))
+model.add(layers.Dense(100, activation='relu'))
+model.add(layers.Dense(1))
+
+Epoch 1/100
+209/209 [==============================] - 100s 455ms/step - loss: 2912.9622 - mean_absolute_error: 41.8939 - val_loss: 3761.3596 - val_mean_absolute_error: 50.6930
+Epoch 2/100
+209/209 [==============================] - 84s 400ms/step - loss: 2206.6877 - mean_absolute_error: 36.2198 - val_loss: 4105.4536 - val_mean_absolute_error: 56.0587
+Epoch 3/100
+209/209 [==============================] - 82s 394ms/step - loss: 2042.6334 - mean_absolute_error: 34.9293 - val_loss: 3218.4299 - val_mean_absolute_error: 45.0521
+Epoch 4/100
+209/209 [==============================] - 82s 392ms/step - loss: 1930.8398 - mean_absolute_error: 33.6717 - val_loss: 4077.9355 - val_mean_absolute_error: 55.1344
+Epoch 5/100
+209/209 [==============================] - 83s 398ms/step - loss: 1808.0386 - mean_absolute_error: 33.0075 - val_loss: 3186.7795 - val_mean_absolute_error: 47.0702
+Epoch 6/100
+209/209 [==============================] - 83s 395ms/step - loss: 1750.2487 - mean_absolute_error: 32.0991 - val_loss: 2907.1042 - val_mean_absolute_error: 42.6991
+Epoch 7/100
+209/209 [==============================] - 83s 398ms/step - loss: 1595.1672 - mean_absolute_error: 30.7232 - val_loss: 2933.2686 - val_mean_absolute_error: 42.5022
+Epoch 8/100
+209/209 [==============================] - 83s 396ms/step - loss: 1645.6705 - mean_absolute_error: 31.3234 - val_loss: 4811.4609 - val_mean_absolute_error: 59.5365
+
+model = models.Sequential()
+# model.add(layers.InputLayer((512, 512, 1)))
+model.add(layers.Conv2D(4, (8, 8), activation='relu', input_shape=(512, 512, 1)))
+# model.add(layers.AveragePooling2D((2,2)))
+model.add(layers.Conv2D(4, (8, 8), activation='relu'))
+
+model.add(layers.Flatten())
+model.add(layers.Dense(128, activation='relu'))
+model.add(layers.Dense(1))
+
+Epoch 1/100
+209/209 [==============================] - 1490s 7s/step - loss: 4569.2427 - mean_absolute_error: 47.2287 - val_loss: 2117.7288 - val_mean_absolute_error: 39.6901
+Epoch 2/100
+ 39/209 [====>.........................] - ETA: 20:21 - loss: 1839.6040 - mean_absolute_error: 34.5709
+
+model = models.Sequential()
+# model.add(layers.InputLayer((512, 512, 1)))
+model.add(layers.Conv2D(4, (8, 8), activation='relu', input_shape=(128, 128, 1)))
+# model.add(layers.AveragePooling2D((2,2)))
+model.add(layers.Conv2D(4, (8, 8), activation='relu'))
+model.add(layers.Flatten())
+model.add(layers.Dense(128, activation='relu'))
+model.add(layers.Dense(1))
+
+Epoch 1/100
+209/209 [==============================] - 70s 334ms/step - loss: 2815.1753 - mean_absolute_error: 41.7756 - val_loss: 2149.5273 - val_mean_absolute_error: 39.0102
+Epoch 2/100
+209/209 [==============================] - 68s 327ms/step - loss: 1770.8680 - mean_absolute_error: 33.6124 - val_loss: 1819.2574 - val_mean_absolute_error: 33.4607
+Epoch 3/100
+209/209 [==============================] - 69s 328ms/step - loss: 1757.8859 - mean_absolute_error: 33.3276 - val_loss: 2379.1421 - val_mean_absolute_error: 42.6561
+Epoch 4/100
+209/209 [==============================] - 68s 326ms/step - loss: 1705.5731 - mean_absolute_error: 32.8246 - val_loss: 1827.4220 - val_mean_absolute_error: 35.0934
+Epoch 5/100
+209/209 [==============================] - 68s 325ms/step - loss: 1625.0745 - mean_absolute_error: 32.0129 - val_loss: 1911.7374 - val_mean_absolute_error: 36.0421
+Epoch 6/100
+209/209 [==============================] - 68s 327ms/step - loss: 1590.4009 - mean_absolute_error: 31.5667 - val_loss: 2382.3711 - val_mean_absolute_error: 42.3941
+Epoch 7/100
+209/209 [==============================] - 69s 328ms/step - loss: 1502.7139 - mean_absolute_error: 30.6312 - val_loss: 1661.7375 - val_mean_absolute_error: 30.9427
+Epoch 8/100
+209/209 [==============================] - 69s 329ms/step - loss: 1425.6898 - mean_absolute_error: 29.7327 - val_loss: 1590.0314 - val_mean_absolute_error: 31.9822
+Epoch 9/100
+ 12/209 [>.............................] - ETA: 1:06 - loss: 1440.0142 - mean_absolute_error: 30.0396
+
+model = models.Sequential()
+# model.add(layers.InputLayer((512, 512, 1)))
+model.add(layers.Conv2D(16, (8, 8), activation='relu', input_shape=(128, 128, 1)))
+# model.add(layers.AveragePooling2D((2,2)))
+model.add(layers.Conv2D(16, (8, 8), activation='relu'))
+model.add(layers.Flatten())
+model.add(layers.Dense(128, activation='relu'))
+model.add(layers.Dense(1))
+
+Epoch 1/100
+209/209 [==============================] - 216s 1s/step - loss: 2286.6746 - mean_absolute_error: 37.2231 - val_loss: 2774.1653 - val_mean_absolute_error: 46.1298
+Epoch 2/100
+209/209 [==============================] - 216s 1s/step - loss: 1615.0752 - mean_absolute_error: 32.0017 - val_loss: 1937.7975 - val_mean_absolute_error: 35.8141
+Epoch 3/100
+209/209 [==============================] - 231s 1s/step - loss: 1442.2703 - mean_absolute_error: 30.1378 - val_loss: 1831.2074 - val_mean_absolute_error: 34.0545
+Epoch 4/100
+209/209 [==============================] - 321s 2s/step - loss: 1390.3269 - mean_absolute_error: 29.5981 - val_loss: 1703.0715 - val_mean_absolute_error: 31.7260
+Epoch 5/100
+209/209 [==============================] - 325s 2s/step - loss: 1302.9165 - mean_absolute_error: 28.6047 - val_loss: 1911.0861 - val_mean_absolute_error: 34.4052
+Epoch 6/100
+209/209 [==============================] - 328s 2s/step - loss: 1201.5913 - mean_absolute_error: 27.2163 - val_loss: 1767.0752 - val_mean_absolute_error: 31.8439
+Epoch 7/100
+209/209 [==============================] - 320s 2s/step - loss: 1194.5803 - mean_absolute_error: 27.1783 - val_loss: 1843.9379 - val_mean_absolute_error: 33.5619
+Epoch 8/100
+209/209 [==============================] - 319s 2s/step - loss: 1068.5343 - mean_absolute_error: 25.6027 - val_loss: 2326.8662 - val_mean_absolute_error: 38.6236
+Epoch 9/100
+209/209 [==============================] - 320s 2s/step - loss: 1039.3406 - mean_absolute_error: 25.2181 - val_loss: 1863.1205 - val_mean_absolute_error: 33.3813
+Epoch 10/100
+209/209 [==============================] - 242s 1s/step - loss: 927.8347 - mean_absolute_error: 23.9212 - val_loss: 1852.4871 - val_mean_absolute_error: 34.2340
+Epoch 11/100
+209/209 [==============================] - 216s 1s/step - loss: 911.3111 - mean_absolute_error: 23.7124 - val_loss: 1996.9335 - val_mean_absolute_error: 35.0243
+Epoch 12/100
+209/209 [==============================] - 289s 1s/step - loss: 840.1794 - mean_absolute_error: 22.7224 - val_loss: 1893.4728 - val_mean_absolute_error: 34.5414
+Epoch 13/100
+209/209 [==============================] - 320s 2s/step - loss: 791.6290 - mean_absolute_error: 21.9700 - val_loss: 2070.7224 - val_mean_absolute_error: 34.3775
+Epoch 14/100
+209/209 [==============================] - 320s 2s/step - loss: 733.4583 - mean_absolute_error: 21.1000 - val_loss: 1730.4445 - val_mean_absolute_error: 32.4369
+Epoch 15/100
+209/209 [==============================] - 320s 2s/step - loss: 654.3320 - mean_absolute_error: 19.9941 - val_loss: 1719.4276 - val_mean_absolute_error: 33.1679
+Epoch 16/100
+209/209 [==============================] - 315s 2s/step - loss: 602.5316 - mean_absolute_error: 19.0997 - val_loss: 1653.5365 - val_mean_absolute_error: 31.7988
+Epoch 17/100
+209/209 [==============================] - 217s 1s/step - loss: 576.1682 - mean_absolute_error: 18.6841 - val_loss: 1549.2698 - val_mean_absolute_error: 30.0225
+Epoch 18/100
+209/209 [==============================] - 215s 1s/step - loss: 523.3271 - mean_absolute_error: 17.7811 - val_loss: 1808.6191 - val_mean_absolute_error: 31.9234
+Epoch 19/100
+209/209 [==============================] - 215s 1s/step - loss: 494.3829 - mean_absolute_error: 17.2205 - val_loss: 1631.7660 - val_mean_absolute_error: 31.0151
+Epoch 20/100
+209/209 [==============================] - 215s 1s/step - loss: 465.2959 - mean_absolute_error: 16.6411 - val_loss: 1522.9235 - val_mean_absolute_error: 30.5211
+Epoch 21/100
+209/209 [==============================] - 215s 1s/step - loss: 409.5469 - mean_absolute_error: 15.7106 - val_loss: 1691.6240 - val_mean_absolute_error: 34.0693
+Epoch 22/100
+209/209 [==============================] - 216s 1s/step - loss: 396.0962 - mean_absolute_error: 15.2600 - val_loss: 1536.4844 - val_mean_absolute_error: 30.2574
+Epoch 23/100
+209/209 [==============================] - 215s 1s/step - loss: 333.7003 - mean_absolute_error: 14.0428 - val_loss: 1535.3650 - val_mean_absolute_error: 30.3563
+Epoch 24/100
+209/209 [==============================] - 215s 1s/step - loss: 333.9558 - mean_absolute_error: 14.0330 - val_loss: 1888.8269 - val_mean_absolute_error: 34.1475
+Epoch 25/100
+209/209 [==============================] - 216s 1s/step - loss: 283.9228 - mean_absolute_error: 12.8411 - val_loss: 1359.6573 - val_mean_absolute_error: 28.7147
+Epoch 26/100
+209/209 [==============================] - 235s 1s/step - loss: 242.5252 - mean_absolute_error: 11.8603 - val_loss: 1380.6670 - val_mean_absolute_error: 28.8437
+Epoch 27/100
+209/209 [==============================] - 236s 1s/step - loss: 223.0312 - mean_absolute_error: 11.3373 - val_loss: 1443.8564 - val_mean_absolute_error: 28.8710
+Epoch 28/100
+209/209 [==============================] - 237s 1s/step - loss: 214.2002 - mean_absolute_error: 11.0803 - val_loss: 1332.7837 - val_mean_absolute_error: 28.3337
+Epoch 29/100
+209/209 [==============================] - 239s 1s/step - loss: 184.2967 - mean_absolute_error: 10.2063 - val_loss: 1364.1125 - val_mean_absolute_error: 28.8547
+Epoch 30/100
+209/209 [==============================] - 238s 1s/step - loss: 182.6119 - mean_absolute_error: 10.2321 - val_loss: 1474.9197 - val_mean_absolute_error: 28.3034
+Epoch 31/100
+209/209 [==============================] - 236s 1s/step - loss: 176.4955 - mean_absolute_error: 9.9571 - val_loss: 1407.6088 - val_mean_absolute_error: 28.8969
+Epoch 32/100
+209/209 [==============================] - 234s 1s/step - loss: 147.2346 - mean_absolute_error: 9.0593 - val_loss: 1462.3855 - val_mean_absolute_error: 30.2828
+Epoch 33/100
+209/209 [==============================] - 218s 1s/step - loss: 132.1523 - mean_absolute_error: 8.5259 - val_loss: 1393.1072 - val_mean_absolute_error: 28.3521
+Epoch 34/100
+209/209 [==============================] - 219s 1s/step - loss: 122.3713 - mean_absolute_error: 8.2497 - val_loss: 1442.5193 - val_mean_absolute_error: 29.3195
+Epoch 35/100
+209/209 [==============================] - 216s 1s/step - loss: 118.6628 - mean_absolute_error: 8.1787 - val_loss: 1533.0732 - val_mean_absolute_error: 30.6624
+Epoch 36/100
+209/209 [==============================] - 216s 1s/step - loss: 104.8990 - mean_absolute_error: 7.5549 - val_loss: 1395.1182 - val_mean_absolute_error: 28.9704
+Epoch 37/100
+209/209 [==============================] - 215s 1s/step - loss: 93.9193 - mean_absolute_error: 7.0647 - val_loss: 1324.3259 - val_mean_absolute_error: 27.9820
+Epoch 38/100
+209/209 [==============================] - 216s 1s/step - loss: 103.3773 - mean_absolute_error: 7.5525 - val_loss: 1485.6814 - val_mean_absolute_error: 29.9007
+Epoch 39/100
+209/209 [==============================] - 216s 1s/step - loss: 103.4979 - mean_absolute_error: 7.5650 - val_loss: 1342.5127 - val_mean_absolute_error: 28.3247
+Epoch 40/100
+209/209 [==============================] - 217s 1s/step - loss: 83.9993 - mean_absolute_error: 6.6656 - val_loss: 1468.5182 - val_mean_absolute_error: 30.1009
+Epoch 41/100
+209/209 [==============================] - 232s 1s/step - loss: 85.3877 - mean_absolute_error: 6.8437 - val_loss: 1543.3152 - val_mean_absolute_error: 30.4753
+Epoch 42/100
+209/209 [==============================] - 236s 1s/step - loss: 76.4168 - mean_absolute_error: 6.3887 - val_loss: 1317.0446 - val_mean_absolute_error: 28.0902
+Epoch 43/100
+209/209 [==============================] - 238s 1s/step - loss: 76.5008 - mean_absolute_error: 6.4818 - val_loss: 1508.0062 - val_mean_absolute_error: 29.7223
+Epoch 44/100
+209/209 [==============================] - 236s 1s/step - loss: 72.4928 - mean_absolute_error: 6.2945 - val_loss: 1407.6777 - val_mean_absolute_error: 28.7062
+Epoch 45/100
+209/209 [==============================] - 238s 1s/step - loss: 78.3285 - mean_absolute_error: 6.6140 - val_loss: 1351.4548 - val_mean_absolute_error: 28.7357
+Epoch 46/100
+209/209 [==============================] - 236s 1s/step - loss: 73.8582 - mean_absolute_error: 6.4722 - val_loss: 1419.1838 - val_mean_absolute_error: 28.7878
+Epoch 47/100
+209/209 [==============================] - 237s 1s/step - loss: 67.3911 - mean_absolute_error: 6.0005 - val_loss: 1398.2926 - val_mean_absolute_error: 28.8367
+Epoch 48/100
+209/209 [==============================] - 8483s 41s/step - loss: 58.5553 - mean_absolute_error: 5.5487 - val_loss: 1428.4839 - val_mean_absolute_error: 28.1291
+Epoch 49/100
+209/209 [==============================] - 218s 1s/step - loss: 92.7734 - mean_absolute_error: 7.0204 - val_loss: 1359.5001 - val_mean_absolute_error: 27.9476
+Epoch 50/100
+209/209 [==============================] - 214s 1s/step - loss: 64.7397 - mean_absolute_error: 5.9771 - val_loss: 1466.9608 - val_mean_absolute_error: 30.0589
+Epoch 51/100
+209/209 [==============================] - 214s 1s/step - loss: 54.7318 - mean_absolute_error: 5.4800 - val_loss: 1406.0858 - val_mean_absolute_error: 28.6581
+Epoch 52/100
+209/209 [==============================] - 213s 1s/step - loss: 59.1538 - mean_absolute_error: 5.6874 - val_loss: 1651.0120 - val_mean_absolute_error: 31.9177
+Epoch 53/100
+209/209 [==============================] - 213s 1s/step - loss: 57.4305 - mean_absolute_error: 5.6038 - val_loss: 1443.9462 - val_mean_absolute_error: 29.4049
+Epoch 54/100
+209/209 [==============================] - 213s 1s/step - loss: 53.3168 - mean_absolute_error: 5.3755 - val_loss: 1459.9178 - val_mean_absolute_error: 29.4250
+Epoch 55/100
+209/209 [==============================] - 213s 1s/step - loss: 47.1231 - mean_absolute_error: 5.0590 - val_loss: 1427.0178 - val_mean_absolute_error: 29.1312
+Epoch 56/100
+209/209 [==============================] - 1807s 9s/step - loss: 49.1177 - mean_absolute_error: 5.2467 - val_loss: 1444.2780 - val_mean_absolute_error: 29.4706
+Epoch 57/100
+209/209 [==============================] - 215s 1s/step - loss: 50.4927 - mean_absolute_error: 5.2137 - val_loss: 1437.2078 - val_mean_absolute_error: 28.9271
+Epoch 58/100
+128/209 [=================>............] - ETA: 1:27 - loss: 44.5357 - mean_absolute_error: 5.0031

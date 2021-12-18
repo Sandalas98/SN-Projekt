@@ -14,7 +14,7 @@ def preprocessing_x_ray(path = './data/test_fol'):
 
     def ShowStatus():
         while not images_processed:
-            print(f'{100*images_count/images_amount} %', end="")
+            print(f'Zdjęcie nr {images_count}', end="")
             print("\r", end="") 
 
 
@@ -40,10 +40,14 @@ def preprocessing_x_ray(path = './data/test_fol'):
     # przejście po wszystkich 
 
     for img in os.listdir(path):
+        print(path+'/'+img)
+        if img == 'post':
+            continue
         image = Image.open(path+'/'+img)
         image = ImageOps.grayscale(image)
         image = image.resize((512,512))
         image = np.array(image)
+        #image = image.reshape((512, 512, 1))
         
         max_higness = np.max(image)
         mean_higness = np.mean(image)
