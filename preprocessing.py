@@ -52,11 +52,11 @@ def preprocessing_x_ray(path = './data/test_fol'):
         max_higness = np.max(image)
         mean_higness = np.mean(image)
 
-        if mean_higness > 100:
+        if mean_higness > 100 or mean_higness < 60:
             continue
 
         print(f'Przetworzono: {img}')
-        
+        #print(f'Jasność: {mean_higness}')
         '''
         Funkcja czyszczenia:
 
