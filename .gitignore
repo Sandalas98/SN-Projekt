@@ -1,2 +1,6 @@
 /data/
 /__pycache__/
+/prez/
+clean.ipynb
+pixels.drawio
+nn_results.txt

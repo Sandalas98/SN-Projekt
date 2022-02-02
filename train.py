@@ -71,6 +71,11 @@ model.compile(optimizer='adam',
               loss=tf.keras.losses.mean_absolute_error,
               metrics=['mean_absolute_error'])
 
+              # Zastanowić się nad innymi miarami błędów (błąd średniokwadratowy, absolutny błąd średniokwadratowy)
+              # spróbować z siecią nauczoną - transfer learning ANN
+              # data augmentation - przyemyśleć Zwiększenie róznorodności danych 
+              # Uproszczenie zadania - zaokrąglanie wieku
+
 model.summary()
 
 model.fit(X_train, y_train, epochs=10, batch_size=10, validation_data=(X_test, y_test))
